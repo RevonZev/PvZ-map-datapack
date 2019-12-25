@@ -1,0 +1,1 @@
+scoreboard objectives add gui dummy "gui menu list"

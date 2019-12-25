@@ -1,0 +1,2 @@
+execute as @a[nbt={Inventory:[{id:"minecraft:sunflower",tag:{display:{Name:'{"text":"Sun x50"}'}}}]}] run scoreboard players add Amount sun 50
+execute as @a[nbt={Inventory:[{id:"minecraft:sunflower",tag:{display:{Name:'{"text":"Sun x50"}'}}}]}] run clear @s sunflower{display:{Name:'{"text":"Sun x50"}'}} 50

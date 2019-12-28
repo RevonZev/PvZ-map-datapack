@@ -32,29 +32,7 @@ setblock 1592 30 600 minecraft:air
 #> Zombie randomizers
 scoreboard players set setTimer z_spawn_time 400
 scoreboard players set currentTimer z_spawn_time -1
-#   normal zombie 15
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_normal]}
-#   Cone zombie 2
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_cone]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_cone]}
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_cone]}
-#   Bucket zombie 1
-summon minecraft:armor_stand 1611.5 1.00 603.5 {Tags:[rdmZombie,spawn_bucket]}
+function pvz:zombie/mechanic/chances
 
 #> Other
 scoreboard players set @e[tag=sunspawn,type=armor_stand,tag=main] sst -1

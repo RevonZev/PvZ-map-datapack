@@ -11,11 +11,11 @@ summon armor_stand 1616 38 590 {Tags:[plantdeck],Invisible:1b}
 #teleport @a 1609 29 600 facing 1591 29 600
 clear @a
 
-summon minecraft:armor_stand 1633 37 606 {Tags:[zombiespawn],Invisible:1b}
-summon minecraft:armor_stand 1633 37 603 {Tags:[zombiespawn],Invisible:1b}
-summon minecraft:armor_stand 1633 37 600 {Tags:[zombiespawn],Invisible:1b}
-summon minecraft:armor_stand 1633 37 597 {Tags:[zombiespawn],Invisible:1b}
-summon minecraft:armor_stand 1633 37 594 {Tags:[zombiespawn],Invisible:1b}
+summon minecraft:area_effect_cloud 1633 37 606 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [zombiespawn]}
+summon minecraft:area_effect_cloud 1633 37 603 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [zombiespawn]}
+summon minecraft:area_effect_cloud 1633 37 600 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [zombiespawn]}
+summon minecraft:area_effect_cloud 1633 37 597 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [zombiespawn]}
+summon minecraft:area_effect_cloud 1633 37 594 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [zombiespawn]}
 
 summon minecraft:area_effect_cloud 1613 37 600 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [sunspawn,main]}
 summon minecraft:area_effect_cloud 1625 37 600 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [sunspawn]}

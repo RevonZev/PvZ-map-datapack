@@ -17,8 +17,8 @@ summon minecraft:armor_stand 1633 37 600 {Tags:[zombiespawn],Invisible:1b}
 summon minecraft:armor_stand 1633 37 597 {Tags:[zombiespawn],Invisible:1b}
 summon minecraft:armor_stand 1633 37 594 {Tags:[zombiespawn],Invisible:1b}
 
-summon minecraft:armor_stand 1613 37 600 {Tags:[sunspawn,main],Invisible:1b,Marker:1b}
-summon minecraft:armor_stand 1625 37 600 {Tags:[sunspawn],Invisible:1b,Marker:1b}
+summon minecraft:area_effect_cloud 1613 37 600 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [sunspawn,main]}
+summon minecraft:area_effect_cloud 1625 37 600 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [sunspawn]}
 
 summon minecraft:armor_stand 1605 37 606 {Tags:[lawnmower],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:48}}],Rotation:[180.0f,0.0f]}
 summon minecraft:armor_stand 1605 37 603 {Tags:[lawnmower],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:48}}],Rotation:[180.0f,0.0f]}

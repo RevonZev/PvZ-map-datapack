@@ -44,13 +44,13 @@ scoreboard players set addAmount wave -1
 scoreboard players set delay wave -1
 
 # Deck Plant
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
-summon minecraft:armor_stand 1613 1.00 603 {Tags:[deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [deck_plant]}
 scoreboard players add @e[tag=deck_plant] deck_plant 0
 
 #> Tag @a choose & play

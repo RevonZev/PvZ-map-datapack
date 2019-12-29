@@ -28,8 +28,8 @@ execute as @e[tag=coco_bullet] at @s if block ~ ~-2 ~ granite run kill @s
 #snow pea
 execute as @e[tag=pea_snow_bullet] at @s run tp @s ~0.3 ~ ~
 execute as @e[type=zombie] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run scoreboard players remove @s z_health 20
-execute as @e[type=zombie] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run scoreboard players set @s z_SPslowtimer 1
-execute as @e[type=zombie] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run tag @s add slowed
+execute as @e[type=zombie,tag=!door] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run scoreboard players set @s z_SPslowtimer 1
+execute as @e[type=zombie,tag=!door] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run tag @s add slowed
 execute as @e[type=zombie] at @s if entity @e[tag=pea_snow_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=pea_snow_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=pea_snow_bullet] at @s if block ~ ~-2 ~ granite run kill @s

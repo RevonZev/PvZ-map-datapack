@@ -44,7 +44,7 @@ execute as @e[tag=deck_plant,scores={deck_plant=0},limit=1] if entity @a[scores=
 execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=9}] run clone 1608 26 608 1608 25 608 ~ ~-6 ~
 
 # Torchwood 10
-execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=10}] run data merge block ~ ~1 ~ {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock ~ ~-5 ~ redstone_block\"}}",Text2:"{\"text\":\"TorchWood\"}",Text3:"{\"text\":\"175\"}"}
+execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=10}] run data merge block ~ ~1 ~ {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock ~ ~-5 ~ redstone_block\"}}",Text2:"{\"text\":\"Torchwood\"}",Text3:"{\"text\":\"175\"}"}
 execute as @e[tag=deck_plant,scores={deck_plant=0},limit=1] if entity @a[scores={deck_num=10}] run scoreboard players set @s deck_plant 10
 execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=10}] run clone 1609 26 608 1609 25 608 ~ ~-6 ~
 

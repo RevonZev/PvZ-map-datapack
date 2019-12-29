@@ -1,24 +1,21 @@
 #pea_bullet
 execute as @e[tag=pea_bullet] at @s run tp @s ~0.3 ~ ~
-execute as @e[tag=pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=..0}] at @s if entity @e[tag=pea_bullet,distance=..1] run scoreboard players remove @s z_health 20
-execute as @e[tag=pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=1..}] at @s if entity @e[tag=pea_bullet,distance=..1] run scoreboard players remove @s z_defence 20
-execute as @e[tag=pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1] at @s if entity @e[tag=pea_bullet,distance=..1] run effect give @s instant_health 1 1
+execute as @e[tag=pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=pea_bullet,distance=..1] run scoreboard players remove @s z_health 20
+execute as @e[tag=pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=pea_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=pea_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=pea_bullet] at @s if block ~ ~-2 ~ granite run kill @s
 
 #pea_fire_bullet
 execute as @e[tag=pea_fire_bullet] at @s run tp @s ~0.3 ~ ~
-execute as @e[tag=pea_fire_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=..0}] at @s if entity @e[tag=pea_fire_bullet,distance=..1] run scoreboard players remove @s z_health 40
-execute as @e[tag=pea_fire_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=1..}] at @s if entity @e[tag=pea_fire_bullet,distance=..1] run scoreboard players remove @s z_defence 40
-execute as @e[tag=pea_fire_bullet] at @s as @e[type=zombie,sort=nearest,limit=1] at @s if entity @e[tag=pea_fire_bullet,distance=..1] run effect give @s instant_health 1 1
+execute as @e[tag=pea_fire_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=pea_fire_bullet,distance=..1] run scoreboard players remove @s z_health 40
+execute as @e[tag=pea_fire_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=pea_fire_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=pea_fire_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=pea_fire_bullet] at @s if block ~ ~-2 ~ granite run kill @s
 
 # Cannon ball
 execute as @e[tag=coco_bullet] at @s run tp @s ~0.5 ~ ~
-execute as @e[tag=coco_bullet] at @s as @e[type=zombie,sort=nearest,limit=1] at @s if entity @e[tag=coco_bullet,distance=..1] run tag @s add coco_bullet_hit
-execute as @e[type=zombie,tag=coco_bullet_hit,scores={z_defence=..0}] run scoreboard players remove @s z_health 600
-execute as @e[type=zombie,tag=coco_bullet_hit,scores={z_defence=1..}] run scoreboard players remove @s z_defence 600
+execute as @e[tag=coco_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=coco_bullet,distance=..1] run tag @s add coco_bullet_hit
+execute as @e[type=zombie,tag=coco_bullet_hit] run scoreboard players remove @s z_health 600
 execute as @e[type=zombie,tag=coco_bullet_hit] at @s run scoreboard players remove @e[type=zombie,distance=..5] z_health 300
 execute as @e[type=zombie,tag=coco_bullet_hit] at @s run effect give @e[type=zombie,distance=..5] instant_health 1 1
 execute as @e[tag=coco_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
@@ -65,16 +62,14 @@ kill @e[tag=snapdragon_fire,scores={ability_cooldown=26}]
 execute as @e[tag=laserbean_bullet] at @s run tp @s ~0.3 ~ ~
 execute as @e[tag=laserbean_bullet] at @s run particle minecraft:dust 1 0 0 0.5 ~ ~0.95 ~0.1 0 0 0 0.01 5 force
 execute as @e[tag=laserbean_bullet] at @s run particle minecraft:dust 1 0 0 0.5 ~ ~0.95 ~-0.1 0 0 0 0.01 5 force
-execute as @e[tag=laserbean_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=..0}] at @s if entity @e[tag=laserbean_bullet,distance=..1] run scoreboard players remove @s z_health 40
-execute as @e[tag=laserbean_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=0..}] at @s if entity @e[tag=laserbean_bullet,distance=..1] run scoreboard players remove @s z_defence 40
-execute as @e[tag=laserbean_bullet] at @s as @e[type=zombie,sort=nearest,limit=1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run effect give @s instant_health 1 1
+execute as @e[tag=laserbean_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run scoreboard players remove @s z_health 40
+execute as @e[tag=laserbean_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=laserbean_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=laserbean_bullet] at @s if block ~ ~-2 ~ granite run kill @s
 
 # Citron Plasma
 execute as @e[tag=citron_plasma] at @s run tp @s ~0.3 ~ ~
-execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=0..}] at @s if entity @e[tag=citron_plasma,distance=..1] run scoreboard players remove @s z_defence 800
-execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,scores={z_defence=..0}] at @s if entity @e[tag=citron_plasma,distance=..1] run scoreboard players remove @s z_health 800
-execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run effect give @s instant_health 1 1
+execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=citron_plasma,distance=..1] run scoreboard players remove @s z_health 800
+execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=citron_plasma] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=citron_plasma] at @s if block ~ ~-2 ~ granite run kill @s

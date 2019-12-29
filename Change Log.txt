@@ -4,3 +4,4 @@
 + Change not moving armor stand to area effect cloud
 + Fixed Tallnut summon
 + Change Torch Wood to Torchwood
++ Fixed bullets deals 2 to 3 times more damage

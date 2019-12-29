@@ -7,7 +7,7 @@ execute as @e[tag=torchwood,tag=summoned] at @s run function pvz:plant/mechanic/
 tag @e[tag=torchwood,tag=summoned] remove summoned
 
 # Pea to fire pea
-execute as @e[tag=pea_bullet,tag=!turned] at @s if entity @e[tag=torchwood,distance=..0.01] run data merge entity @s {Tags:[pea_fire_bullet],ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:20}}]}
+execute as @e[tag=pea_bullet] at @s if entity @e[tag=torchwood,distance=..0.01] run data merge entity @s {Tags:[pea_fire_bullet],ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:20}}]}
 
 # Snowpea to pea
 execute as @e[tag=pea_snow_bullet] at @s if entity @e[tag=torchwood,distance=..0.01] run data merge entity @s {Tags:[pea_bullet],ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:10}}]}

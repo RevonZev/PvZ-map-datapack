@@ -93,6 +93,11 @@ execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=19}] run data m
 execute as @e[tag=deck_plant,scores={deck_plant=0},limit=1] if entity @a[scores={deck_num=19}] run scoreboard players set @s deck_plant 19
 execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=19}] run clone 1600 26 611 1600 25 611 ~ ~-6 ~
 
+# Split Pea 20
+execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=20}] run data merge block ~ ~1 ~ {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock ~ ~-5 ~ redstone_block\"}}",Text2:"{\"text\":\"Split Pea\"}",Text3:"{\"text\":\"125\"}"}
+execute as @e[tag=deck_plant,scores={deck_plant=0},limit=1] if entity @a[scores={deck_num=20}] run scoreboard players set @s deck_plant 20
+execute as @e[tag=plantdeck] at @s if entity @a[scores={deck_num=20}] run clone 1603 26 611 1603 25 611 ~ ~-6 ~
+
 
 # Continue
 execute as @e[tag=plantdeck] if entity @a[scores={deck_num=1..}] run scoreboard players add @s deck 1

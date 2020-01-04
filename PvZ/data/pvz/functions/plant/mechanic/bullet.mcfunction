@@ -73,3 +73,11 @@ execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,di
 execute as @e[tag=citron_plasma] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=laserbean_bullet,distance=..1] run effect give @s instant_health 1 1
 execute as @e[tag=citron_plasma] at @s if entity @e[type=zombie,distance=..1] run kill @s
 execute as @e[tag=citron_plasma] at @s if block ~ ~-2 ~ granite run kill @s
+
+#split_pea_bullet #backward
+execute as @e[tag=split_pea_bullet] at @s run tp @s ~-0.3 ~ ~
+execute as @e[tag=split_pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=split_pea_bullet,distance=..1] run scoreboard players remove @s z_health 40
+execute as @e[tag=split_pea_bullet] at @s as @e[type=zombie,tag=door,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=split_pea_bullet,distance=..1] run scoreboard players remove @s z_health 230
+execute as @e[tag=split_pea_bullet] at @s as @e[type=zombie,sort=nearest,limit=1,distance=..1] at @s if entity @e[tag=split_pea_bullet,distance=..1] run effect give @s instant_health 1 1
+execute as @e[tag=split_pea_bullet] at @s if entity @e[type=zombie,distance=..1] run kill @s
+execute as @e[tag=split_pea_bullet] at @s if block ~ ~-2 ~ diorite run kill @s

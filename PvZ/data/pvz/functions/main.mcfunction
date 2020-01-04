@@ -26,6 +26,7 @@ function pvz:plant/tallnut
 function pvz:plant/torchwood
 function pvz:plant/twinsunflower
 function pvz:plant/wallnut
+function pvz:plant/splitpea/main
 #  Mechanic
 function pvz:plant/mechanic/bullet
 function pvz:plant/mechanic/health

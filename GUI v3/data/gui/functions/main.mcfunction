@@ -6,11 +6,21 @@ execute as @a unless score @s gui.submenu matches 0.. run scoreboard players set
 ## Reset player gui.open incase player has diselect the menu
 scoreboard players set @a gui.open 0
 
+##########
+
 # Compass GUI Example menu
 ## The player has opened a menu
 execute as @a if data entity @s SelectedItem{id:"minecraft:compass"} if data entity @s SelectedItem.tag.display{Name:'{"text":"GUI Example"}'} run scoreboard players set @s gui.open 1
 ## Run the menu
 execute as @a at @s if data entity @s SelectedItem{id:"minecraft:compass"} if data entity @s SelectedItem.tag.display{Name:'{"text":"GUI Example"}'} run function gui:menus/compas_gui_eg/run
+
+# PvZ Plant GUI
+## The player has opened a menu
+execute as @a if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run scoreboard players set @s gui.open 1
+## Run the menu
+execute as @a at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run function gui:menus/pvz_plants_gui/run
+
+##########
 
 # Run last
 ## Reset submenu index if player has no menu opened

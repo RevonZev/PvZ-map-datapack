@@ -10,8 +10,6 @@ execute if score @s gui.submenu matches 0 run function gui:menus/pvz_plants_gui/
 execute if score @s gui.submenu matches 0 run scoreboard players set @s gui.submenu 1
 
 # Click events
-execute if score @s gui.submenu matches 1 run function gui:menus/pvz_plants_gui/events/1
-execute if score @s gui.submenu matches 2 run function gui:menus/pvz_plants_gui/events/2
+#execute if score @s gui.submenu matches 1 run function gui:menus/pvz_plants_gui/events/1
 # Sets the menu
 execute if score @s gui.submenu matches 1 run function gui:menus/pvz_plants_gui/set_menu/1
-execute if score @s gui.submenu matches 2 run function gui:menus/pvz_plants_gui/set_menu/2

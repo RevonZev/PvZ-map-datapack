@@ -1,6 +1,9 @@
 # Runs from /menus/compas_gui_eg/set_menu/1.mcfunction
 # Executes as gui.entity in proximity with the player
 
+# Empty out the minecart
+function gui:menus/empty
+
 # The Plants
 data modify entity @s Items append value {Slot:0,id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:'"Peashooter"',Lore:['{"text":"100 Sun","color":"gold"}']},gui_item:1b}}
 data modify entity @s Items append value {Slot:1,id:"minecraft:rabbit_spawn_egg",Count:1b,tag:{display:{Name:'"Potato Mine"',Lore:['{"text":"25 Sun","color":"gold"}']},gui_item:1b}}

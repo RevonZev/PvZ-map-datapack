@@ -1,4 +1,4 @@
-# Runs from /menus/compas_gui_eg/run.mcfunction
+# Runs from /menus/pvz_plants_gui/run.mcfunction
 # Executes as at player holding a compass GUI Example in submenu 1
 
 # Sets the submenu item

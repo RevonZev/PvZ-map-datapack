@@ -1,5 +1,5 @@
 # Runs from main.mcfunction
-# Executes as at player holding a compass GUI Example
+# Executes as at player holding an apple "Plants"
 
 # Run first
 ## Summons the gui entity

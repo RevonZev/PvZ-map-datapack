@@ -1,4 +1,4 @@
-# Runs from /menus/compas_gui_eg/set_menu/1.mcfunction
+# Runs from /menus/pvz_plants_gui/set_menu/1.mcfunction
 # Executes as gui.entity in proximity with the player
 
 # Empty out the minecart

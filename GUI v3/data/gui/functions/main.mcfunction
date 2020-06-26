@@ -6,6 +6,10 @@ execute as @a unless score @s gui.submenu matches 0.. run scoreboard players set
 ## Reset player gui.open incase player has diselect the menu
 scoreboard players set @a gui.open 0
 
+# PvZ Replace
+execute as @a[tag=choose] unless entity @s[nbt={Inventory:[{id:"minecraft:apple",tag:{CustomModelData:4}}]}] run replaceitem entity @p hotbar.4 minecraft:apple{CustomModelData:4,gui_item:1,display:{Name:'{"text":"Plants"}'}} 1
+execute as @a[tag=play] unless entity @s[nbt={Inventory:[{id:"minecraft:apple",tag:{CustomModelData:6}}]}] run replaceitem entity @p hotbar.8 minecraft:apple{CustomModelData:6,gui_item:1,display:{Name:'{"text":"Options"}'}} 1
+
 ##########
 
 # Compass GUI Example menu

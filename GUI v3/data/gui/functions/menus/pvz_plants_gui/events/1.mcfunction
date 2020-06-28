@@ -25,3 +25,6 @@ execute as @e[tag=gui.entity,distance=..1] unless data entity @s Items[{Slot:21b
 
 # The side bar
 execute as @e[tag=gui.entity,distance=..1] unless data entity @s Items[{Slot:17b}] as @a[scores={gui.open=1,gui.submenu=1},distance=..1] at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run function gui:menus/pvz_plants_gui/events/commands/reset
+
+# To submenu 2
+execute if entity @e[tag=plantdeck,type=armor_stand,scores={deck=7..}] run function gui:menus/pvz_plants_gui/events/commands/goto_sub_2

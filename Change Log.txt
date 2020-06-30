@@ -1,7 +1,5 @@
-+ Sun from sky ITEM count change from 50 to 1 (convert still to 50 sun)
-+ Fixed Twin Sunflower only giving 50 sun
-+ Fixed Tallnut
-+ Change not moving armor stand to area effect cloud
-+ Fixed Tallnut summon
-+ Change Torch Wood to Torchwood
-+ Fixed bullets deals 2 to 3 times more damage
++ Updated GUI v2 to v3
++ Fixed Cherry Bomb explosion is 5x5 tiles (instead of 3x3)
++ Fixed tile with Squash can place another plant
+
+- Removed Hat GUI submenu

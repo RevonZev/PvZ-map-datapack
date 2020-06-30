@@ -7,7 +7,7 @@ execute as @e[tag=squash,tag=summoned] at @s run function pvz:plant/mechanic/edg
 tag @e[tag=squash,tag=summoned] remove summoned
 
 # Jump
-execute as @e[tag=squash] at @s positioned ~4 ~ ~ if entity @e[type=zombie,distance=..1] run tag @s[tag=plant] remove plant
+execute as @e[tag=squash] at @s positioned ~3 ~ ~ if entity @e[type=zombie,distance=..1] run tag @s[tag=plant] remove plant
 execute as @e[tag=squash,tag=!jump] at @s positioned ~3 ~ ~ if entity @e[type=zombie,distance=..1] run data merge entity @s {Motion:[0.50,0.8,0.0],Tags:[squash,jump]}
 
 # Damage

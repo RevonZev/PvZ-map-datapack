@@ -14,7 +14,7 @@ execute as @e[tag=cherrybomb,scores={ability_cooldown=2}] at @s run playsound mi
 execute as @e[tag=cherrybomb,scores={ability_cooldown=29}] at @s run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 1 1
 
 # Explode
-execute as @e[type=zombie] at @s if entity @e[tag=cherrybomb,distance=..7,scores={ability_cooldown=30}] run effect give @s instant_health 1 1
-execute as @e[tag=cherrybomb,scores={ability_cooldown=30}] at @s run scoreboard players remove @e[type=zombie,distance=..7] z_health 1800
+execute as @e[type=zombie] at @s if entity @e[tag=cherrybomb,distance=..5.01,scores={ability_cooldown=30}] run effect give @s instant_health 1 1
+execute as @e[tag=cherrybomb,scores={ability_cooldown=30}] at @s run scoreboard players remove @e[type=zombie,distance=..5.5] z_health 1800
 execute as @e[tag=cherrybomb,scores={ability_cooldown=30}] at @s run particle minecraft:explosion ~ ~ ~ 3 1.5 3 0.01 10 normal
 kill @e[tag=cherrybomb,scores={ability_cooldown=30}]

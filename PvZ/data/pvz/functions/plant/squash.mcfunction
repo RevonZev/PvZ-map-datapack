@@ -10,7 +10,9 @@ tag @e[tag=squash,tag=summoned] remove summoned
 execute as @e[tag=squash] at @s positioned ~3 ~ ~ if entity @e[type=zombie,distance=..1] run tag @s[tag=plant] remove plant
 execute as @e[tag=squash,tag=!jump] at @s positioned ~3 ~ ~ if entity @e[type=zombie,distance=..1] run data merge entity @s {Motion:[0.50,0.8,0.0],Tags:[squash,jump]}
 
+execute as @e[tag=squash,tag=jump,nbt={OnGround:0b}] run data merge entity @s {Tags:[squash,jump,has_aired]}
+
 # Damage
-execute as @e[tag=squash,tag=jump] at @s run tag @e[type=zombie,distance=..2] add squashed
-execute as @e[tag=squash,tag=jump] at @s if entity @e[type=zombie,distance=..2,tag=squashed] run kill @s
+execute as @e[tag=squash,tag=has_aired,nbt={OnGround:1b}] at @s run tag @e[type=zombie,distance=..2] add squashed
+execute as @e[tag=squash,tag=has_aired,nbt={OnGround:1b}] at @s run kill @s
 scoreboard players remove @e[type=zombie,tag=squashed] z_health 1800

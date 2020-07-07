@@ -41,7 +41,7 @@ execute as @a if score @s gui.open matches 1 run effect give @s minecraft:slowne
 ## Stop gui.entity from moving
 execute as @e[tag=gui.entity] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 ## Kills gui.entity if no player in proximity has open a menu
-execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..1] run tp @s ~ -10 ~
-execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..1] run kill @s
+execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..2] run tp @s ~ -10 ~
+execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..2] run kill @s
 ## Kills gui_item
 kill @e[type=item,nbt={Item:{tag:{gui_item:1b}}}]

@@ -5,3 +5,5 @@ execute as @e[tag=pvz_slot_3] run data modify entity @s CustomName set from enti
 execute as @e[tag=pvz_slot_4] run data modify entity @s CustomName set from entity @p Inventory[4].tag.plant_font
 execute as @e[tag=pvz_slot_5] run data modify entity @s CustomName set from entity @p Inventory[5].tag.plant_font
 execute as @e[tag=pvz_slot_6] run data modify entity @s CustomName set from entity @p Inventory[6].tag.plant_font
+execute as @e[tag=pvz_slot_7] run data modify entity @s CustomName set from entity @p Inventory[7].tag.plant_font
+execute as @e[tag=pvz_slot_8] run data modify entity @s CustomName set from entity @p Inventory[8].tag.plant_font

@@ -20,9 +20,9 @@ execute as @a at @s if data entity @s SelectedItem{id:"minecraft:compass"} if da
 
 # PvZ Plant GUI
 ## The player has opened a menu
-execute as @a if data entity @s SelectedItem{id:"minecraft:carrot_on_a_stick"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run scoreboard players set @s gui.open 1
+execute as @a if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run scoreboard players set @s gui.open 1
 ## Run the menu
-execute as @a at @s if data entity @s SelectedItem{id:"minecraft:carrot_on_a_stick"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run function gui:menus/pvz_plants_gui/run
+execute as @a at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Plants"}'} run function gui:menus/pvz_plants_gui/run
 
 # PvZ Settings GUI
 ## The player has opened a menu

@@ -1,0 +1,9 @@
+summon minecraft:pig 1605.51 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_0], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.52 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_1], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.53 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_2], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.54 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_3], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.55 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_4], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.56 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_5], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.57 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_6], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.58 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_7], CustomName: '{"text":""}'}
+summon minecraft:pig 1605.59 32 610.5 {Silent: 1b, NoAI: 1b, Tags: [hotbar_title, pvz_slot_8], CustomName: '{"text":""}'}

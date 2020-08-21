@@ -6,6 +6,11 @@ function pvz:game/sun_converter
 function pvz:game/sun_spawn
 function pvz:game/wave
 
+# Player's Hotbar
+execute unless entity @e[tag=hotbar_title] run function pvz:player/hotbar/summon_for_title
+function pvz:player/hotbar/hotbar
+function pvz:player/event/event
+
 # Plant
 function pvz:plant/cherrybomb
 function pvz:plant/chomper

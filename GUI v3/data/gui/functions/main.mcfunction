@@ -7,8 +7,8 @@ execute as @a unless score @s gui.submenu matches 0.. run scoreboard players set
 scoreboard players set @a gui.open 0
 
 # PvZ Replace
-execute as @a[tag=choose] run function gui:menus/pvz_plants_gui/replace_hotbar
-execute as @a[tag=play] unless entity @s[nbt={Inventory:[{id:"minecraft:apple",tag:{CustomModelData:6}}]}] run replaceitem entity @p hotbar.8 minecraft:apple{CustomModelData:6,gui_item:1,display:{Name:'{"text":"Settings"}'}} 1
+execute as @a[tag=choose, scores={gui.open=0}] run function gui:menus/pvz_plants_gui/replace_hotbar
+execute as @a[tag=play] run replaceitem entity @a hotbar.8 minecraft:apple{CustomModelData: 54, plant_name: '"empty"',sun_cost: 1000, plant_font_selected: '"\\uE032"', plant_font: '"\\uE031"', pvz_slot: 8, display: {Name: '{"text":"Settings"}'}, gui_item: 1b} 1
 
 ##########
 
@@ -44,4 +44,4 @@ execute as @e[tag=gui.entity] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..2] run tp @s ~ -10 ~
 execute as @e[tag=gui.entity] at @s unless entity @a[scores={gui.open=1},distance=..2] run kill @s
 ## Kills gui_item
-kill @e[type=item,nbt={Item:{tag:{gui_item:1b}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:apple"}}]

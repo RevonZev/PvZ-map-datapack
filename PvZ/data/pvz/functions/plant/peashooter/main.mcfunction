@@ -1,6 +1,6 @@
 # summon
-execute as @e[name="Peashooter"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:9}}],Rotation:[90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,peashooter]}
-execute as @e[name="Peashooter"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="peashooter"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:9}}],Rotation:[90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,peashooter]}
+execute as @e[name="peashooter"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=peashooter,tag=summoned] run scoreboard players set @s p_health 4
 execute as @e[tag=peashooter,tag=summoned] run function pvz:plant/peashooter/assign_own_num
 execute as @e[tag=peashooter,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect

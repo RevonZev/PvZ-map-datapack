@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Chomper"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:17}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,subplant,summoned,chomper]}
-execute as @e[name="Chomper"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="chomper"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:17}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,subplant,summoned,chomper]}
+execute as @e[name="chomper"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=chomper,tag=summoned] run scoreboard players set @s php 4
 tag @e[tag=chomper,tag=summoned] remove plant
 execute as @e[tag=chomper,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect

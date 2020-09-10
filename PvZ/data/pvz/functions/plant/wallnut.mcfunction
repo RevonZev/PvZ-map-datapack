@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Wallnut"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:30}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,wallnut]}
-execute as @e[name="Wallnut"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="wallnut"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:30}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,wallnut]}
+execute as @e[name="wallnut"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=wallnut,tag=summoned] run scoreboard players set @s p_health 72
 execute as @e[tag=wallnut,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
 execute as @e[tag=wallnut,tag=summoned] at @s run function pvz:plant/mechanic/edge_detect

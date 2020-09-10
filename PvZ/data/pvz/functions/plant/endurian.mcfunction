@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Endurian"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:22}}],Rotation:[0.0f,0.0f],Invisible:1b,Tags:[plant,summoned,endurian]}
-execute as @e[name="Endurian"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="endurian"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:22}}],Rotation:[0.0f,0.0f],Invisible:1b,Tags:[plant,summoned,endurian]}
+execute as @e[name="endurian"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=endurian,tag=summoned] run scoreboard players set @s p_health 54
 scoreboard players add @e[tag=endurian,tag=summoned] ability_cooldown 0
 execute as @e[tag=endurian,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect

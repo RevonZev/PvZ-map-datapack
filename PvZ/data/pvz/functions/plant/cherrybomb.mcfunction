@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Cherry Bomb"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:16}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,cherrybomb]}
-execute as @e[name="Cherry Bomb"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="cherrybomb"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:16}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,cherrybomb]}
+execute as @e[name="cherrybomb"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=cherrybomb,tag=summoned] run scoreboard players set @s p_health 100
 execute as @e[tag=cherrybomb,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
 execute as @e[tag=cherrybomb,tag=summoned] at @s run function pvz:plant/mechanic/edge_detect

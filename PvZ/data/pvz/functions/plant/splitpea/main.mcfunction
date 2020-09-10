@@ -1,6 +1,6 @@
 # summon
-execute as @e[name="Split Pea"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:52}}],Rotation:[90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,split_pea]}
-execute as @e[name="Split Pea"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="splitpea"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:52}}],Rotation:[90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,split_pea]}
+execute as @e[name="splitpea"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=split_pea,tag=summoned] run scoreboard players set @s p_health 4
 execute as @e[tag=split_pea,tag=summoned] run function pvz:plant/splitpea/assign_own_num
 execute as @e[tag=split_pea,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect

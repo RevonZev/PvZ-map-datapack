@@ -1,3 +1,3 @@
 kill @e[tag=player_summon]
-summon minecraft:cow ~ ~ ~ {CustomName:'"ERROR"',Tags:[player_summon], NoAI:1b}
-scoreboard players operation Player sun -= sun_cost sun
+summon minecraft:bat ~ ~ ~ {CustomName:'"ERROR"',Tags:[player_summon], NoAI:1b, Silent: 1b}
+scoreboard players operation Amount sun -= sun_cost sun

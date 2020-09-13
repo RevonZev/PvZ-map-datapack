@@ -9,6 +9,8 @@ scoreboard players set @a gui.open 0
 # PvZ Replace
 execute as @a[tag=choose,scores={gui.open=0}] run function gui:menus/pvz_plants_gui/replace_hotbar
 execute as @a[tag=play] run replaceitem entity @a hotbar.8 minecraft:apple{CustomModelData: 54, plant_name: '"empty"', sun_cost: 1000, plant_font_selected: '"\\uE032"', plant_font: '"\\uE031"', pvz_slot: 8, display: {Name: '{"text":"Settings"}'}, delete_item: 1b} 1
+execute as @a[tag=play] run replaceitem entity @a hotbar.7 minecraft:carrot_on_a_stick{CustomModelData: 1, plant_name: '"Remove"', sun_cost: 0, plant_font_selected: '"\\uE02a"', plant_font: '"\\uE035"', pvz_slot:7, display: {Name: '{"text":"Shovel"}'}, delete_item: 1b} 1
+execute as @a[tag=choose] run replaceitem entity @a hotbar.7 minecraft:carrot_on_a_stick{CustomModelData: 1, plant_name: '"Remove"', sun_cost: 0, plant_font_selected: '"\\uE02a"', plant_font: '"\\uE035"', pvz_slot:7, display: {Name: '{"text":"Shovel"}'}, delete_item: 1b} 1
 
 ##########
 

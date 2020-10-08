@@ -6,7 +6,7 @@ execute as @a[scores={intro=1}] run tp @s 1637 47 589 82 10
 tag @a[scores={intro=1}] remove choose
 tag @a[scores={intro=1}] remove play
 execute as @a[scores={intro=1}] run title @a title {"text":"Plants vs Zombies","color":"green"}
-execute as @a[scores={intro=1}] run title @a subtitle {"text":"Map Version 2.6","color":"white"}
+execute as @a[scores={intro=1}] run title @a subtitle {"text":"Map Version 2.10","color":"white"}
 
 execute as @a[scores={intro=100}] run title @a title {"text":"Revon","color":"red"}
 execute as @a[scores={intro=100}] run title @a subtitle {"text":"Map creator","color":"white"}

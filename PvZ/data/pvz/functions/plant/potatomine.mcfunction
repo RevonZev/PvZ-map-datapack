@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Potato Mine"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:12}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[subplant,plant,summoned,potatomine]}
-execute as @e[name="Potato Mine"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="potato_mine"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:12}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[subplant,plant,summoned,potatomine]}
+execute as @e[name="potato_mine"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=potatomine,tag=summoned] run scoreboard players set @s p_health 4
 execute as @e[tag=potatomine,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
 execute as @e[tag=potatomine,tag=summoned] at @s run function pvz:plant/mechanic/edge_detect

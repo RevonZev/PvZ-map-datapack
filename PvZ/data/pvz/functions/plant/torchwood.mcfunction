@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Torchwood"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:19}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,torchwood]}
-execute as @e[name="Torchwood"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="torchwood"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:19}}],Rotation:[270.0f,0.0f],Invisible:1b,Tags:[plant,summoned,torchwood]}
+execute as @e[name="torchwood"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=torchwood,tag=summoned] run scoreboard players set @s php 4
 execute as @e[tag=torchwood,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
 execute as @e[tag=torchwood,tag=summoned] at @s run function pvz:plant/mechanic/edge_detect

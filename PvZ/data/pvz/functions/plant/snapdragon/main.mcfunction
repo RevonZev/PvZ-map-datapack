@@ -1,6 +1,6 @@
 # summon
-execute as @e[name="Snapdragon"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:38}}],Rotation:[-90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,snapdragon]}
-execute as @e[name="Snapdragon"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="snapdragon"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:38}}],Rotation:[-90.0f,0.0f],Invisible:1b,Tags:[plant,summoned,snapdragon]}
+execute as @e[name="snapdragon"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=snapdragon,tag=summoned] run scoreboard players set @s p_health 4
 execute as @e[tag=snapdragon,tag=summoned] run function pvz:plant/snapdragon/assign_own_num
 execute as @e[tag=snapdragon,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect

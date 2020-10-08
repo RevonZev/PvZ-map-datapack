@@ -1,6 +1,6 @@
 # Summon
-execute as @e[name="Iceberg Lettuce"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:29}}],Rotation:[0.0f,0.0f],Invisible:1b,Tags:[subplant,plant,subplant,summoned,iceberglettuce]}
-execute as @e[name="Iceberg Lettuce"] at @s run tp @s ~ ~-1000 ~
+execute as @e[name="iceberg_lettuce"] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:29}}],Rotation:[0.0f,0.0f],Invisible:1b,Tags:[subplant,plant,subplant,summoned,iceberglettuce]}
+execute as @e[name="iceberg_lettuce"] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=iceberglettuce,tag=summoned] run scoreboard players set @s p_health 6
 execute as @e[tag=iceberglettuce,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
 execute as @e[tag=iceberglettuce,tag=summoned] at @s run function pvz:plant/mechanic/edge_detect

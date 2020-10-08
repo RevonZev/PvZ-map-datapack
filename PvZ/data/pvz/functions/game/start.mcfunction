@@ -1,6 +1,6 @@
 tag @a remove choose
 tag @a add play
-clear @a
+kill @e[tag=gui.entity]
 #tp @a 1603 38 603
 scoreboard players set Amount sun 100
 scoreboard players set currentTimer z_spawn_time 400

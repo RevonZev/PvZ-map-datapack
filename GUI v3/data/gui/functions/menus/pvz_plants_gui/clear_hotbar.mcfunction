@@ -1,9 +1,0 @@
-execute if data entity @s Inventory[{Slot:0b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.0 minecraft:air
-execute if data entity @s Inventory[{Slot:1b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.1 minecraft:air
-execute if data entity @s Inventory[{Slot:2b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.2 minecraft:air
-execute if data entity @s Inventory[{Slot:3b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.3 minecraft:air
-execute if data entity @s Inventory[{Slot:4b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.4 minecraft:air
-execute if data entity @s Inventory[{Slot:5b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.5 minecraft:air
-execute if data entity @s Inventory[{Slot:6b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.6 minecraft:air
-execute if data entity @s Inventory[{Slot:7b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.7 minecraft:air
-execute if data entity @s Inventory[{Slot:8b}].tag{sun_cost:1000} run replaceitem entity @s hotbar.8 minecraft:air

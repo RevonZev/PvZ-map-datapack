@@ -1,6 +1,0 @@
-# Runs from /menus/pvz_settings_gui/run.mcfunction
-# Executes as at player holding an apple "Settings" with submenu index of 1
-
-execute as @e[tag=gui.entity,distance=..1] unless data entity @s Items[{Slot:12b}] as @a[scores={gui.open=1,gui.submenu=1},distance=..1] at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Settings"}'} run function gui:menus/pvz_settings_gui/events/commands/reset_music
-execute as @e[tag=gui.entity,distance=..1] unless data entity @s Items[{Slot:13b}] as @a[scores={gui.open=1,gui.submenu=1},distance=..1] at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Settings"}'} run function gui:menus/pvz_settings_gui/events/commands/frenzy
-execute as @e[tag=gui.entity,distance=..1] unless data entity @s Items[{Slot:14b}] as @a[scores={gui.open=1,gui.submenu=1},distance=..1] at @s if data entity @s SelectedItem{id:"minecraft:apple"} if data entity @s SelectedItem.tag.display{Name:'{"text":"Settings"}'} run function gui:menus/pvz_settings_gui/events/commands/game_over

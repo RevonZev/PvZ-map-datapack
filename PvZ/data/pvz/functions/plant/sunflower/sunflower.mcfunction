@@ -1,7 +1,7 @@
 #declare tag sunflower
 
 # Summon
-execute as @e[name="sunflower",type=!item] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:8}}],Rotation:[0.0f,0.0f],Invisible:1b,Tags:[plant,summoned,sunflower]}
+execute as @e[name="sunflower",type=!item] at @s run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b,tag:{CustomModelData:8}}],Invisible:1b,Tags:[plant,summoned,sunflower]}
 execute as @e[name="sunflower",type=!item] at @s run tp @s ~ ~-1000 ~
 execute as @e[tag=sunflower,tag=summoned] run scoreboard players set @s p_health 4
 execute as @e[tag=sunflower,tag=summoned] at @s run function pvz:plant/mechanic/doubles_detect
